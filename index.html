@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="HOME" content="市川風我のプロフィール">
+        <title>HOME</title>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    
+    <body>
+        <main>
+            <header>
+                <strong>
+                    HOME
+                </strong>
+            </header>
+         
+            <div class="profile">
+                <div class="icon">
+                    <img src="img/icon.png" width="120" height="120" alt="風我のアイコンです">
+                </div>
+                <div class="info">
+                    <h1>Fuga Ichikawa   市川 風我</h1>
+                    <p>2000,1,30</p>
+                    <p>KANAGAWA</p>
+                    <p>HOSEI University</p>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/fu_ich" target="_blank">
+                                <img src="img/twitter.png" width="20" height="20" alt="Twitterのリンクです。">    
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/fuga_1kawa/" target="_blank">
+                                <img src="img/instagram.png" width="20" height="20" alt="Instagramのリンクです。">
+                            </a>
+                        </li>  
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="major">
+                <div class="subheading">
+                    <h1>Major   専攻</h1>
+                </div>
+                <p>Digital media environment    デジタルメディア環境</p>
+            </div>
+            
+            <div class="interest">
+                <div class="subheading">
+                    <h1>Interest    興味・関心・趣味</h1>
+                </div>
+                <ul>
+                    <li>
+                        <div class="mouse">
+                            Art    現代アート
+                            <span class="supplement">
+                                YOSHIROTTEN, Tom sachs, UCNV, Yabiku henrique yudi
+                            </span>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="mouse">
+                            Fashion    ファッション
+                            <span class="supplement">
+                                Domestic Brands, Vintage
+                            </span>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="mouse">
+                            Basketball      バスケットボール
+                            <span class="supplement">
+                                2017 Inter highschool Participation
+                            </span>
+                        </div> 
+                    </li>
+                    <li>
+                        <div class="mouse">
+                            Movie      映画
+                            <span class="supplement">
+                                Sing Street, Catch Me If You Can, Taxi Driver, Once Upon a Time in Hollywood
+                            </span>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="University">
+                <div class="subheading">
+                    <h1>University     所属大学</h1>
+                </div>
+                <ul>
+                    <li>法政大学 多摩キャンパス 4号館</li>
+                    <li>〒194-0298</li>
+                    <li>東京都町田市相原町4342</li>
+                    <li>HOSEI University Tama Campus Building No.4</li>
+                    <li>4342, Aihara-machi, Machida-shi, Tokyo, 194-0298, Japan </li>
+                </ul>
+                <div id="target">
+                    <script src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyAMPsP_OZjhR-taFnAr3Z60waza6pmclX8&callback=initMap" async defer></script>
+                    <script>
+                    function initMap() {
+                        'use strict';
+
+                        var target = document.getElementById('target');
+                        var map;
+                        var marker;
+                        var hosei = {lat: 35.615747, lng: 139.299403};
+
+                        map = new google.maps.Map(target, {
+                            center: hosei,
+                            zoom: 13
+                        });
+
+                        marker = new google.maps.Marker({
+                            position: hosei,
+                            map: map,
+                        });
+                    }
+                    </script>
+                </div>
+            </div>
+            
+            <div class="Contact">
+                <div class="subheading">
+                    <h1>Contact   連絡先</h1>
+                </div>
+                <p>fuhga2547@gmail.com</p>
+            </div>
+            
+            
+            <footer>
+                <p>(c)Copyright Fuga Ichikawa All rights reserved 2020</p>
+            </footer>
+        </main>
+        <!-- sidebar -->
+        <input id="menu" type="checkbox" />
+        <label for="menu" class="open">
+            <img src="img/Menu_icon.png" alt="メニューアイコン">
+        </label>
+        <label for="menu" class="back"></label>
+        <!-- sidebar -->
+        
+        <aside>
+            <!-- sidebar -->
+            <label for="menu" class="close">×</label>
+            <!-- sidebar -->
+            
+            <nav>
+                <ul>
+                    <a href="https://fuga1kawa.github.io/home/">
+                        <li>HOME</li>
+                    </a>
+                    <a href="https://fuga1kawa.github.io/works/">
+                        <li>WORKS</li>
+                    </a>
+                    <a href="https://fuga1kawa.github.io/comments/">
+                        <li>COMMENTS</li>
+                    </a>
+                </ul>
+            </nav>
+        </aside>
+    </body>
+</html>
